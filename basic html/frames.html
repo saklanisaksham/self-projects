@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Frames</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<frameset cols = "20%,80%" scrolling="yes" frameborder="1" border="20">
+    <frame name="menu" src="links.html" />
+    <frameset rows="35%,80%" border="10" frameborder="1" >
+        <frameset cols="30%,30%,40%" border="10" frameborder="1" >
+            <frame name="left" src="form.html" />
+            <frame name="middle" src="index.html" />
+            <frame name="right" src="table.html" />
+        </frameset>
+        <frame name="bottom" src="\talcss\tal.html" />
+    </frameset>
+
+</frameset>
+<noframes>
+    <body>Browser does not support frames</body>
+</noframes>
+
+</html>

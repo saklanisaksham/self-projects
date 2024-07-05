@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d2{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .d3{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">   ismnis
+    </div>
+    <input type="button" value="click" onclick="setattr()">
+    <input type="button" value="click" onclick="setattr1()">
+    <script>
+        function setattr(){
+            document.getElementById("d1").setAttribute("class","d2");
+        }
+        function setattr1(){
+            document.getElementById("d1").setAttribute("class","d3");
+        }
+    </script>
+</body>
+</html>

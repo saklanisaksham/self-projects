@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="abc.php" target="_blank" method="get" style="border: 5px solid black; width: 25rem;">
+        <pre>
+        First name : <input type="text" id="fn" list="a" name="first_name" autocomplete="off" autofocus>
+        <br>
+        <datalist id="a">
+            <option value="Saksham"></option>
+            <option value="Rohan"></option>
+            <option value="Avanish"></option>
+            <option value="Kartik"></option>
+            <option value="Sarthak"></option>
+           
+        </datalist>
+        Last name :  <input type="text" id="ln" value="" name="last_name">
+        <br>
+
+        password :   <input type="password" id="fn" value="" name="password">
+        <br>
+
+        email :      <input type="email" id="fn" value="" name="email" placeholder="abc@gmail.com">
+        <br>
+        <br>
+
+        Physics:   <input type="checkbox" value="on" name="physics">
+        Chemistry: <input type="checkbox" value="on" name="physics">
+        Maths:     <input type="checkbox" value="on" name="physics">
+        Computer:  <input type="checkbox" value="on" name="physics">
+
+        Feedback : <textarea name="txtarea" id="" cols="22" rows="5"></textarea>
+
+    </pre>
+    <div style="margin-left: 50px;">
+        <input style="margin-right: 20px;" type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+</html>

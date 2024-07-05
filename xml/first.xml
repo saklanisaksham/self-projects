@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="" type="text/css"?>
+<?xml-model href="file.dtd" type="application/xml-dtd"?>
+
+
+<class>
+    <student_info>
+        <name>Saksham</name>
+        <id>01</id>
+    </student_info>
+</class>

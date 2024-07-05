@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Demo</title>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+     </script>
+</head>
+<body>
+    <script type="module">
+       import { GoogleGenerativeAI } from "@google/generative-ai";
+ 
+       // Fetch your API_KEY
+       const API_KEY = "AIzaSyCvp0CT1fJokcZ14Ij2wA7joXuRhtpbW4c";
+ 
+       // Access your API key (see "Set up your API key" above)
+       const genAI = new GoogleGenerativeAI(API_KEY);
+ 
+       // For text-only input, use the gemini-pro model
+       const model = genAI.getGenerativeModel({ model: "gemini-pro"});
+ 
+       async function run() {
+            const prompt = "hello.";
+            const result = await model.generateContent(prompt);
+            const response = await result.response;
+            const text = response.text();
+            console.log(text);
+       }  
+       run();
+    </script>
+ </body>
+</html>

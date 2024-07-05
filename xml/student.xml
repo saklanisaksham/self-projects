@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+    <student>
+        <id>01</id>
+        <name>s1</name>
+        <contact>6286297297297</contact>
+        <Rollno.>11</Rollno.>
+        <email>abc@gmail.com</email>
+    </student>
+    <student>
+        <id>01</id>
+        <name>s2</name>
+        <contact>6286297297297</contact>
+        <Rollno.>12</Rollno.>
+        <email>abc@gmail.com</email>
+    </student>
+    <student>
+        <id>01</id>
+        <name>s3</name>
+        <contact>6286297297297</contact>
+        <Rollno.>13</Rollno.>
+        <email>abc@gmail.com</email>
+    </student>
+</students>

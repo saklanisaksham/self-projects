@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var month = ["January" , "February" , "March" , "April" , "May" , "June" , "July" , "August" , "September" , "October" , "November" , "December"];
+        var last = [31,28,31,30,31,30,31,31,30,31,30,31];
+        var i=0,j,cnt=0,c;
+        var yr, k, mon;
+
+        function getCal(){
+            Year = document.getElementById("year").value;
+            Month = document.getElementById("month").value;
+            
+            if(Year%400==0){
+                last[1]=29;
+            }
+            Month--;
+            var date = new Date(Year , Month , 1);
+            var da = date.getDay();
+            alert(da);
+        }
+
+    </script>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1>Calendar</h1>
+    <form name="form1">
+        <h3>Select year</h3>
+        <select name="data" , id="year">
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+
+        <h3>Select Month</h3>
+        <select name="data" , id="month">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+        </select>
+
+        <h3>Select Date</h3>
+
+        <input type="button" value="Submit" onclick="getCal()">
+
+    </form>
+</body>
+</html>

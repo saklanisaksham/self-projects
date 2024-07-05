@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Move</title>
+  <style>
+    #box {
+      width: 300px;
+      height: 200px;
+      border: 2px solid #000;
+      position: relative;
+    }
+
+   
+
+    #coordinatesDisplay {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="box" onmousemove="showCoordinates(event)">
+  
+</div>
+<div id="coordinatesDisplay">X: 0, Y: 0</div>
+
+<script>
+  function showCoordinates(event) {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    const coordinatesElement = document.getElementById('coordinatesDisplay');
+    coordinatesElement.innerHTML = `X: ${x}, Y: ${y}`;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    
+        #coordinates {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 5px;
+          background-color: #fff;
+          border: 1px solid #000;
+        }
+    
+        #coordinatesDisplay {
+          margin-top: 10px;
+        }
+      </style>
+</head>
+<body>
+    
+    <img src="../download.jpeg" alt="Workplace" usemap="#workmap" onmousemove="showCoordinates(event)">
+    <div id="box" onmousemove="showCoordinates(event)">
+  
+    </div>
+    <div id="ObjName"></div>
+    <br>
+    <map name="workmap">
+        <area shape="rect" 
+        coords="27,34,165,207" 
+        alt="Computer" 
+        href="computer.html"
+        onmouseover="writeText('Computer')">
+
+        <area shape="rect"
+        coords="174,111,210,152" 
+        alt="Phone" 
+        href="phone.html"
+        onmouseover="writeText('Phone')">
+        
+        <area shape="circle" 
+        coords="206,178,35" 
+        alt="Coffee" 
+        href="coffee.html"  
+        onmouseover="writeText('Coffee')">
+    </map>
+    <script>
+        function showCoordinates(event) {
+          const x = event.clientX;
+          const y = event.clientY;
+      
+          const coordinatesElement = document.getElementById('box');
+          coordinatesElement.innerHTML = `X: ${x}, Y: ${y}`;
+        }
+        function writeText(text) {
+          const coordinatesElement = document.getElementById('ObjName');
+          coordinatesElement.innerHTML = text;
+        }
+    </script>
+      </script>
+</body>
+</html>

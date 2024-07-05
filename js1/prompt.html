@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var x = prompt("Enter integers");
+        // var y = x.split(" ").map(Number);
+        // var rev = y.map(number => parseInt(number.toString().split('').reverse().join('')));
+        // console.log(y);
+        // console.log(rev);
+
+        // var revArr = [];
+        // for(var i=0; i<y.length; i++ ){
+        //     revArr.push(parseInt(y[i].toString().split('').reverse().join('')));
+        // }
+        // console.log(revArr);
+
+
+        var str = "ssaklanisaksham@gmail.com";
+        var x = str.split("@");
+        //var y = x[0].substr(8);
+
+        var z = x[0].replace(/saksham/ , "*******");
+        x[0] = z;
+        var res ='';
+        res =x[0]+'@'+ x[1];
+        
+        console.log(res);
+
+    </script>
+</body>
+</html>

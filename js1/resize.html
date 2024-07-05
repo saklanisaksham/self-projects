@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function win(){
+            var x = window.outerWidth;
+            var y = window.outerHeight;
+            var ttex   = "Window size = width : "+x + "Height : "+y;
+            document.getElementById("pp").innerHTML = ttex;
+        }
+    </script>
+</head>
+<body onresize="win()">
+    <p>Resize window</p>
+
+    <p id="pp"></p>
+
+</body>
+</html>

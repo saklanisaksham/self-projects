@@ -1,0 +1,5 @@
+
+    <!ELEMENT class (student_info)>
+    <!ELEMENT student_info (name , id)>
+    <!ELEMENT name (#PCDATA)> 
+    <!ELEMENT id (#PCDATA)>

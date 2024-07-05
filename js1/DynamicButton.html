@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Buttons</title>
+    <style>
+        .d1{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="clickme" onclick="func()">
+
+    <div class="">
+        Saksham
+    </div>
+    <script>
+        function func() {
+            var btn = document.createElement("div");
+            var t = document.createTextNode("Saksham");
+            btn.appendChild(t);
+            document.body.appendChild(btn);
+        }
+
+        // document.getElementById("").addEventListener("click" , function(){
+        //     .setAttribute("class" , "d1")
+        // });
+
+    </script>
+</body>
+</html>
